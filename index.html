@@ -90,27 +90,6 @@ body{
    tabindex="0">Poopsploit</a>
 
 
-<div id="msg"></div>
-
-<!-- CREDS & GREETZ. Styled after zecoxao's site (his hen/hen2/hen3/idlesauce pages all
-     carry the same "creds & greetz" block), but the NAMES are the operator's own list,
-     not a copy of his - his local mirror had 8 of 12 slots stripped and those were never
-     guessed. zecoxao leads. One name was dropped at the operator's request. The list is
-     de-duplicated: zecoxao and idlesauce each appeared twice across the old block and the
-     added list, and are kept once, in their first position.
-     j0rdy is deliberately NOT a greet - he gets the attribution line underneath, which is
-     credit rather than a greeting. -->
-<div id="credits">
-    <span>creds &amp; greetz</span>
-    <h3>
-        zecoxao, ChendoChap, abc/psfree, idlesauce, flat_z, TheFlow,
-        c0w-ar, earthonion, SIStro, egycnq, abkarino, gezine, Dr.Yenyen,
-        StonedModder, VoidWhisper, EchoStretch, BestPig, AlAzif, drakmor,
-        hzhreal, Team-Alua, hammer-83, ntfargo, shahrilnet, Znullptr,
-        LM, ItsJokerZz
-    </h3>
-    <p id="basedon">based on the slopkit by j0rdy</p>
-</div>
 
 <script>
 "use strict";
@@ -136,7 +115,7 @@ var RANGES = {
             var e = document.getElementById(k);
             if (e) { e.classList.add("disabled"); e.setAttribute("tabindex", "-1"); }
         }
-        if (msg) msg.textContent = "not a PS5 browser";
+        if (msg) msg.textContent = "No es un navegador Ps5";
         return;
     }
     var fw = m[1] + "." + m[2];
@@ -157,7 +136,7 @@ var RANGES = {
     if (msg) {
         msg.textContent = usable.length
             ? "firmware " + fw
-            : "firmware " + fw + " — not supported (Poopsploit 9.00-12.00, P2JB 12.00-12.70)";
+            : "firmware " + fw + " — No soportado (Poopsploit 9.00-12.00, P2JB 12.00-12.70)";
     }
     // focus whichever entry is actually usable
     var first = document.querySelector(".btn:not(.disabled)");

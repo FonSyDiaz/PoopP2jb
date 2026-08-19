@@ -101,17 +101,6 @@ body{
      added list, and are kept once, in their first position.
      j0rdy is deliberately NOT a greet - he gets the attribution line underneath, which is
      credit rather than a greeting. -->
-<div id="credits">
-    <span>creds &amp; greetz</span>
-    <h3>
-        zecoxao, ChendoChap, abc/psfree, idlesauce, flat_z, TheFlow,
-        c0w-ar, earthonion, SIStro, egycnq, abkarino, gezine, Dr.Yenyen,
-        StonedModder, VoidWhisper, EchoStretch, BestPig, AlAzif, drakmor,
-        hzhreal, hammer-83, ntfargo, shahrilnet, Znullptr,
-        LM, ItsJokerZz
-    </h3>
-    <p id="basedon">based on the slopkit by j0rdy</p>
-</div>
 
 <script>
 "use strict";
@@ -137,7 +126,7 @@ var RANGES = {
             var e = document.getElementById(k);
             if (e) { e.classList.add("disabled"); e.setAttribute("tabindex", "-1"); }
         }
-        if (msg) msg.textContent = "not a PS5 browser";
+        if (msg) msg.textContent = "No es un navegador Ps5";
         return;
     }
     var fw = m[1] + "." + m[2];
@@ -177,7 +166,7 @@ var RANGES = {
     try { session = sessionStorage.getItem("slopkit-poops:jb") === "1"; } catch (e) { }
     if (!session) return;
     var msg = document.getElementById("msg");
-    if (msg) msg.textContent = "already jailbroken — opens the payload menu";
+    if (msg) msg.textContent = "Hack realizado — Abre el menu payload";
 })();
 </script>
 
